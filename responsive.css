@@ -1,0 +1,129 @@
+/*
+>=1200
+992-1199
+768-991
+576-768
+460-576
+414-460
+375-414
+320-375
+*/
+
+@media (max-width: 1400px){
+    .container.main .nabor {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 70px;
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 1200px){
+    header nav {
+        width: 50%;
+    }
+    .container.hero .info {
+        width: 45%;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 15px 30px;
+    }
+    header nav {
+        width: 60%;
+    }
+    .container.hero .info {
+        margin-top: 40px 0;
+        width: 60%;
+    }
+    .container.main .nabor {
+        padding: 0 50px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+    .container.main .nabor p {
+        margin-top: 15px;
+    }
+    .container.main .nabor .card {
+        padding: 250px 10px 10px;
+    }
+    .container.main .nabor .card:hover {
+        transform: none;
+    }
+    .about ul {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px 20px;
+    }
+    header nav {
+        width: 70%;
+    }
+    .container.hero .info {
+        width: 75%;
+    }
+    .container.main .nabor {
+        padding: 0 25px;
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .container {
+        padding: 25px 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header span {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav {
+        margin-top: 25px;
+        display: none;
+        width: 100%;
+        transition: all 500ms ease-in;
+        animation-name: menu;
+        animation-duration: 0.5s;
+    }
+    @keyframes menu {
+        from {
+            position: relative;
+            top: -200px;
+        }
+        to {
+            position: relative;
+            top: 0;
+        }
+}
+    header nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 35px;
+    }
+    header nav ul li {
+        text-align: center;
+    }
+    header #btnMenu {
+        display: flex;
+    }
+    .container.main .nabor {
+        padding: 0;
+        row-gap: 30px;
+    }
+    .about ul {
+        column-gap: 15px;
+    }
+    .about img{
+        width: 90%;
+    }
+}

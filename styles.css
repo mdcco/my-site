@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    background: rgb(0,12,36);
+    background: linear-gradient(180deg, rgba(0,12,36,1) 0%, rgba(0,30,78,1) 31%, rgba(33,64,255,1) 68%, rgba(56,63,255,1) 100%);
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+}
+
+.container {
+    padding: 40px 60px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    text-align: center;
+    align-self: center;
+}
+
+header span {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+header nav {
+    float: right;
+    width: 40%;
+    align-self: center;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li {
+    font-weight: 600;
+    font-size: 1.22rem;
+    
+}
+
+header nav ul li a {
+    transition: all 300ms ease;
+}
+
+header nav ul li a:hover {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(139, 106, 230);
+}
+
+header #btnMenu {
+    float: right;
+    display: none;
+    font-weight: 600;
+    font-size: 1.290rem;
+    padding: 9px 13px;
+    border: none;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    background: none;
+}
+
+.container.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.container.hero .info {
+    margin: 70px 0;
+    width: 40%;
+    color: #fff;
+    text-align: center;
+}
+
+.container.hero .info h3 {
+    font-size: 2.325rem;
+    font-weight: 600;
+    color: rgb(146, 58, 228);
+    text-align: center;
+}
+
+.container.hero .info h1 {
+    font-size: 3.325rem;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container.hero .info p {
+    font-size: 1.525rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container.hero #btnZakaz {
+    border: none;
+    border-radius: 30px;
+    width: 70%;
+    background-color: rgb(91, 48, 211);
+    font-weight: 600;
+    font-size: 1.290rem;
+    padding: 11px 12px;
+    margin-top: 20px;
+    transition: all 500ms ease;
+}
+
+.container.hero #btnZakaz:hover{
+    transform: scaleX(1.1);
+    background-color: rgb(106, 66, 214);
+}
+
+
+.container.main {
+    background: url(360_F_167191951_tYBaptR7RNqAefZVBLlVVW9glHtURfIA.jpg);
+    background-attachment: fixed;
+}
+
+.container.main .nabor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 100px;
+}
+
+.container.main .nabor p {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.container.main .nabor .card {
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    padding: 400px 10px 10px;
+    box-shadow: 7px 10px 15px black;
+    transition: all 500ms ease;
+}
+
+.container.main .nabor .card.fr {
+    background: url(макет.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container.main .nabor .card.sd {
+    background: url(bdfecfa128176089a921d78ba66249b7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container.main .nabor .card.th {
+    background: url(backend.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container.main .nabor .card.fo {
+    background: url(computer-.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container.main .nabor .card:hover {
+    transform: scale(1.1);
+}
+
+.container.main .nabor .card button{
+    padding: 15px 55px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(71, 71, 71);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 500ms ease;
+}
+
+.container.main .nabor .card button:hover {
+    transform: scale(1.1);
+    background-color: rgb(107, 67, 216);
+}
+
+/*Отдел "О нас"*/
+
+.about img {
+    width: 180px;
+    border-radius: 30px;
+}
+
+.about h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.6rem;;
+    text-align: center;
+}
+
+.about ul {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about ul li {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    justify-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
