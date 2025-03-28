@@ -10,10 +10,22 @@
 */
 
 @media (max-width: 1400px){
+
+    /*Отдел услуг*/
+
     .container.main .nabor {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 70px;
         row-gap: 50px;
+    }
+
+    /*Отдел "О нас"*/
+
+    .about .container .info {
+        width: 45%;
+    }
+    .about img {
+        height: 400px;
     }
 }
 
@@ -21,6 +33,9 @@
     header nav {
         width: 50%;
     }
+
+    /*Отдел заказ*/
+
     .container.hero .info {
         width: 45%;
     }
@@ -33,10 +48,16 @@
     header nav {
         width: 60%;
     }
+
+    /*Отдел заказ*/
+
     .container.hero .info {
         margin-top: 40px 0;
         width: 60%;
     }
+
+    /*Отдел услуг*/
+
     .container.main .nabor {
         padding: 0 50px;
         grid-template-columns: repeat(1, 1fr);
@@ -51,11 +72,35 @@
     .container.main .nabor .card:hover {
         transform: none;
     }
-    .about ul {
-        margin-top: 55px;
+
+    /*Отдел "О нас"*/
+
+    .about img {
+        border-radius: 50px;
+    }
+    .about .block.r img {
+        clip-path: none;
+    }
+    .about .block.l img {
+        clip-path: none;
+    }
+    .about .container .info.r {
+        text-align: center;
+    }
+    
+    .about .container .info.l {
+        text-align: center;
+    }
+    .about .container .block {
+        margin-top: 50px;
+        padding: 0 20px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        row-gap: 20px;
+    }
+    .about .container .info {
+        width: 75%;
     }
 }
 
@@ -66,12 +111,28 @@
     header nav {
         width: 70%;
     }
+
+    /*Отдел заказ*/
+
     .container.hero .info {
         width: 75%;
     }
+
+    /*Отдел услуг*/
+
     .container.main .nabor {
         padding: 0 25px;
         row-gap: 50px;
+    }
+
+    /*Отдел "О нас"*/
+
+    .about img {
+        width: 400px;
+        border-radius: 50px;
+    }
+    .about .container p {
+        font-size: 1.5rem;
     }
 }
 
@@ -94,6 +155,7 @@
         animation-name: menu;
         animation-duration: 0.5s;
     }
+    
     @keyframes menu {
         from {
             position: relative;
@@ -116,14 +178,36 @@
     header #btnMenu {
         display: flex;
     }
+
+    /*Отдел услуг*/
+
     .container.main .nabor {
         padding: 0;
         row-gap: 30px;
     }
-    .about ul {
-        column-gap: 15px;
+
+    /*Отдел "О нас"*/
+
+    .about img {
+        width: 250px;
+        height: 200px;
+        border-radius: 50px;
     }
-    .about img{
-        width: 90%;
+    .about .container p {
+        font-size: 1.2rem;
+    }
+    .about .container .block {
+        margin-top: 15px;
+        padding: 0;
+        row-gap: 15px;
+    }
+    .about .container .info {
+        width: 100%;
+    }
+    .about .container button {
+        padding: 12px 10px;
+        border-radius: 35px;
+        font-weight: 600;
+        font-size: 1.2rem;
     }
 }
