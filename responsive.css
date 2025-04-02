@@ -39,6 +39,13 @@
     .container.hero .info {
         width: 45%;
     }
+
+    /*Работа с нами*/
+
+    .workWithUs .anketa {
+        width: 50%;
+        margin: 100px 0;
+    }
 }
 
 @media (max-width: 991px) {
@@ -209,5 +216,10 @@
         border-radius: 35px;
         font-weight: 600;
         font-size: 1.2rem;
+    }
+
+    .workWithUs .anketa {
+        width: 80%;
+        margin: 30px 0;
     }
 }
