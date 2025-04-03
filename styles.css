@@ -298,8 +298,9 @@ header #btnMenu {
 /*Работа с нами*/
 
 .workWithUs {
-    background: url(various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space-min.jpg);
+    background: url(noutbuk_klavishi_gradient_167934_1280x800.jpg);
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -424,12 +425,14 @@ footer .container .linkWithUs .ref .vk svg {
 }
 
 footer .container .linkWithUs .ref .tg svg:hover {
+    -webkit-filter: drop-shadow(0 0 7px #00b7ff);
     filter: drop-shadow(0 0 7px #00b7ff);
     color: #7dd9fd;
     transform: scale(1.1);
 }
 
 footer .container .linkWithUs .ref .vk svg:hover {
+    -webkit-filter: drop-shadow(0 0 7px #003cff);
     filter: drop-shadow(0 0 7px #003cff);
     color: #6f91ff;
     transform: scale(1.1);

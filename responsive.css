@@ -222,4 +222,10 @@
         width: 80%;
         margin: 30px 0;
     }
+
+    /*Футер*/
+
+    footer .container {
+        padding-top: 30px
+    }
 }
